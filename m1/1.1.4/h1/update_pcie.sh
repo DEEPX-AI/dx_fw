@@ -11,7 +11,7 @@ function env_setup () {
 	ARCH=$(uname -m)
 
 	if [ "$ARCH" == "aarch64" ]; then
-		__update_exe="update_pcie_arm64"
+		__update_exe="update_pcie_arm"
 	elif [ "$ARCH" == "x86_64" ]; then
 		__update_exe="update_pcie"
 	else
