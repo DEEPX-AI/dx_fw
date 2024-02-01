@@ -11,5 +11,5 @@ do
     echo /dev/dx_dma"$idx"_c2h_0
     ./update_pcie.sh -d /dev/dx_dma"$idx"_c2h_0 -f map_qspi.txt -t fwboot
     ./update_pcie.sh -d /dev/dx_dma"$idx"_c2h_0 -f map_qspi.txt -t spl0 spl1 spl2 spl3
-    ./update_pcie.sh -d /dev/dx_dma"$idx"_c2h_0 -f map_qspi.txt -t fwboot_r0 fwboot_r1
+    #./update_pcie.sh -d /dev/dx_dma"$idx"_c2h_0 -f map_qspi.txt -t fwboot_r0 fwboot_r1
 done
