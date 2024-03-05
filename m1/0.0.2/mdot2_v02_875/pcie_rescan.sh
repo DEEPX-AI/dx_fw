@@ -21,7 +21,8 @@ function get_pci_id(){
 }
 
 function pci_remove(){
-    path="/sys/bus/pci/devices/0000:$1/remove"
+    #path="/sys/bus/pci/devices/0000:$1/remove"
+    path="/sys/bus/pci/devices/$1/remove"
     echo $path
 
     if [ -e $path ]; then
