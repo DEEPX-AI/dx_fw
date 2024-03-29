@@ -11,8 +11,11 @@ function exec_cmd(){
 
 pci_id=""
 function get_pci_id(){
-    temp=`eval lspci -nn | grep "$1" | tr ' ' '\n' | grep "[0-9]:*\."`
-    pci_id=$(echo $temp)
+    temp=`eval lspci | grep "$1" | tr ' ' '\n' | grep "[0-9]:*\."`
+    if [ "$pci_id" != "" ]; then
+        pci_id+=" "
+    fi
+    pci_id+=$(echo $temp)
     #pci_id="0000:${temp:0:7}"
     echo Detected PCI Device ID : ${pci_id}
 }
@@ -90,8 +93,8 @@ function pci_unlock(){
     exec_cmd "echo none > $lock_owner"
 }
 #### Start ####
-create_lock
-pci_lock
+# create_lock
+# pci_lock
 
 # Check hotplug function of pcie
 if [ -e ${KERN_CONF_F} ]; then
@@ -117,13 +120,9 @@ else
     get_pci_id "Xilinx"
 
     if [ "$pci_id" == "" ]; then
-        echo "[Get] DeepX Synopsys PCIE ID"
-        get_pci_id "1ff4:"
-    fi
-
-    if [ "$pci_id" == "" ]; then
-        echo "[Get] Synopsys PCIE ID"
-        get_pci_id "Processing accelerators"
+        echo "[Get] DeepX PCIE ID"
+        get_pci_id "Processing accelerators: DEEPX Co., Ltd."
+        get_pci_id "Processing accelerators: Synopsys"
     fi
 
     for id in ${pci_id}
@@ -135,5 +134,5 @@ else
     ### End PCI Device Remove & Rescan ###
 fi
 
-pci_unlock
+# pci_unlock
 #### End ####
