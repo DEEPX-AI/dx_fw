@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 
 
-## [1.1.8] for DXNNv2 - 2024-03-27
+## [1.1.8] for DXNNv1 - 2024-03-27
 
 ### Features
 
