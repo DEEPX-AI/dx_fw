@@ -5,18 +5,11 @@ All notable changes to this project will be documented in this file.
 
 # Changelog
 
-## v2.0.5 / 2024-06-03
+## v1.4.4 / 2024-07-23
 ### 1. Changed
-- LPDDR5 Frequency Change (6.0 GHz-> 5.5 GHz)
+- pcie link-up check logic
 ### 2. Fixed
-- None
+- get_timer API overflow
+- UART RX Pull-Up for interrupt W/A
 ### 3. Added
-- None
-
-## v2.0.4 / 2024-05-27
-### 1. Changed
-- pcie: LINK_UP_LIMIT_CNT (3000ms->10000ms)
-### 2. Fixed
-- pcie: fix reboot issue on lattepanda-sigma
-### 3. Added
-- None
+- nor flash driver (by build option)
