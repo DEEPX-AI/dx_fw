@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 
 # Changelog
+## v1.4.7 / 2024-08-05
+### 1. Changed
+- remove app 'testcase'
+### 2. Fixed
+- 
+### 3. Added
+- 
+
 ## v1.4.6 / 2024-07-31
 ### 1. Changed
 - fw: pcie link-up check logic
