@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 
 # Changelog
+## v1.5.1 / 2024-10-04
+### 1. Changed
+- Update lock mechanism for queue
+### 2. Fixed
+- 
+### 3. Added
+-
+
 ## v1.5.0 / 2024-09-20
 ### 1. Changed
 - LPDDR5 Clock 5.5 GHz
