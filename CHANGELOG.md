@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 
 # Changelog
+## v1.5.2 / 2024-10-28
+### 1. Changed
+- Improved function to pass status information to host when an error occurs
+- update inference flow monitoring with process id
+- pvt 2-point calibration
+- ubbpdate pcie revision to support new memory map(0x00->0x01)
+### 2. Fixed
+- 
+### 3. Added
+- Idle Hook for Sleep Mode
+
 ## v1.5.1 / 2024-10-04
 ### 1. Changed
 - Update lock mechanism for queue
