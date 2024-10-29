@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 
 # Changelog
+## v1.5.4 / 2024-10-29
+### 1. Changed
+- reduce boot time
+- LPDDR Enable duty train
+### 2. Fixed
+### 3. Added
+- Support H1 (quattro) Board with 6.4GHz
+
+## v1.5.3 / 2024-10-28
+### 1. Changed
+### 2. Fixed
+- fix LPDDR low performance problem
+### 3. Added
+
 ## v1.5.2 / 2024-10-28
 ### 1. Changed
 - Improved function to pass status information to host when an error occurs
