@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 
 # Changelog
+## v1.5.6 / 2024-11-05
+### 1. Changed
+-
+### 2. Fixed
+- disable lpddr temperature interrupt
+### 3. Added
+- NPU Clock off by message 
+
 ## v1.5.4 / 2024-10-29
 ### 1. Changed
 - reduce boot time
