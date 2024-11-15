@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 
 # Changelog
-## v1.5.6 / 2024-11-05
+## v1.5.7 / 2024-11-15
 ### 1. Changed
 - Alert NPU error -> NPU event [error, notify] to host
 ### 2. Fixed
