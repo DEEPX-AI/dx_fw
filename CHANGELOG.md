@@ -6,6 +6,16 @@ All notable changes to this project will be documented in this file.
 # Changelog
 ## v1.5.6 / 2024-11-05
 ### 1. Changed
+- Alert NPU error -> NPU event [error, notify] to host
+### 2. Fixed
+- 
+### 3. Added
+- NPU recovery concept
+- Notify message about thermal throttling & emergency
+
+# Changelog
+## v1.5.6 / 2024-11-05
+### 1. Changed
 -
 ### 2. Fixed
 - disable lpddr temperature interrupt
