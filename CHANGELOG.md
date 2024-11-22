@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+# Changelog
+## v1.5.8 / 2024-11-22
+### 1. Changed
+- update pcie link-up logic (timeout 1s -> 5s)
+- update throttling logic (default off, mode=step)
+### 2. Fixed
+- 
+### 3. Added
+- 
+- 
 
 # Changelog
 ## v1.5.7 / 2024-11-15
