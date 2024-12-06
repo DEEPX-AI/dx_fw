@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 
 # Changelog
+## v1.5.9 / 2024-12-06
+### 1. Changed
+- Alert warning to host when NPU temperature reaches emergency threshold
+- Alert Error to host when lpddr Link-ECC double-bit error occurs
+### 2. Fixed
+- Modify the state of inf_flow_mon to disabled
+### 3. Added
+- SMBUS slave mode for H1 board
+- 
+
+# Changelog
 ## v1.5.8 / 2024-11-22
 ### 1. Changed
 - update pcie link-up logic (timeout 1s -> 5s)
