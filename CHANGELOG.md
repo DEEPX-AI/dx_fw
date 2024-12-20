@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 
 # Changelog
+
+## v1.5.9 / 2024-12-06
+### 1. Changed
+- update throttling logic (default off, added cooldown)
+### 2. Fixed
+- 
+### 3. Added
+- update throttling config by json file
+
 ## v1.5.9 / 2024-12-06
 ### 1. Changed
 - Alert warning to host when NPU temperature reaches emergency threshold
