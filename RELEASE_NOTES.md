@@ -1,8 +1,7 @@
-# Changelog
+# RELEASE_NOTES
 
 All notable changes to this project will be documented in this file.
 
-# Changelog
 
 ## v1.5.9 / 2024-12-06
 ### 1. Changed
@@ -22,7 +21,6 @@ All notable changes to this project will be documented in this file.
 - SMBUS slave mode for H1 board
 - 
 
-# Changelog
 ## v1.5.8 / 2024-11-22
 ### 1. Changed
 - update pcie link-up logic (timeout 1s -> 5s)
@@ -33,7 +31,6 @@ All notable changes to this project will be documented in this file.
 - 
 - 
 
-# Changelog
 ## v1.5.7 / 2024-11-15
 ### 1. Changed
 - Alert NPU error -> NPU event [error, notify] to host
@@ -43,7 +40,6 @@ All notable changes to this project will be documented in this file.
 - NPU recovery concept
 - Notify message about thermal throttling & emergency
 
-# Changelog
 ## v1.5.6 / 2024-11-05
 ### 1. Changed
 -
