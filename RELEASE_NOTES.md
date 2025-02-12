@@ -2,8 +2,42 @@
 
 All notable changes to this project will be documented in this file.
 
+## v1.6.2 / 2025-02.12
+### 1. Changed
+- Print module revision version by gpio
+- Update NPU Throttling driver
+ Emergency Stop (over 100'C): NPU inference will be paused until cool down (95'C)
+ NPU Throttling by Firmware (over 90'C): NPU frequency is managed by firmware
+ NPU Throttling by User (under 90'C): NPU frequency is mangaged by user (dxrt-cli -C)
+- Implement QoS Driver
+ Improved the driver to measure DDR bandwidth for each NPU inference.
+- Add Device Mode
+ Added device mode classification for power optimization.
+ Idle Mode: Mode where inference is in progress (NPU Clock On).
+ Power Save Mode: Standby state without inference (NPU Clock Off).
+### 2. Fixed
+- NPU on/off logic
+ Fixed an issue causing the M1 stopped when power off NPU
+### 3. Added
+- Support LPDDR5/5x by single firmware binary(fw.bin)
+ M.2 : default frequency (5: 5600mhz / 5x: 6400mhz)
+ H1  : default frequency (5: 6000mhz / 5x: 6400mhz)
+- Support Single-run M1 chip
+ Disable updates for firmware versions below v1.6.1 (only Single-run chip)
+- Add Auto Recovery Function
+ Added an automatic recovery mode when a device error is reported due to internal issues
+ (NPU hang + abnormal software behavior).
 
-## v1.5.9 / 2024-12-06
+## v1.6.1 / 2025-01-10
+### 1. Changed
+- Remove duplicated images in fw.bin
+### 2. Fixed
+- Enhance PCIe Link-Up Logic
+ Modified the checking logic to use PhyStatus.
+### 3. Added
+- 
+
+## v1.6.0 / 2024-12-20
 ### 1. Changed
 - update throttling logic (default off, added cooldown)
 ### 2. Fixed
@@ -20,7 +54,6 @@ All notable changes to this project will be documented in this file.
 ### 3. Added
 - SMBUS slave mode for H1 board
 - 
-
 ## v1.5.8 / 2024-11-22
 ### 1. Changed
 - update pcie link-up logic (timeout 1s -> 5s)
@@ -28,7 +61,6 @@ All notable changes to this project will be documented in this file.
 ### 2. Fixed
 - 
 ### 3. Added
-- 
 - 
 
 ## v1.5.7 / 2024-11-15
