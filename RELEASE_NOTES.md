@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## v1.6.3 / 2025-02.19
+### 1. Changed
+- Set LPDDR Frequency by User
+    - Add features for setting LPDDR frequency by using $dxrt-cli-internal -t <target_freq>
+    - Only Support [5200, 5400, 5600, 5800, 6000, 6200, 6400] Mbps for now
+    - [Test]
+        - Change LPDDR freq by using dxrt-cli-internal (with -t option)
+    - [Related Issue]
+        - None
+### 2. Fixed
+- Fixed Software Hang Issue
+    - Fixed an issue where a software hang occurred when the device mode switched to power save mode during inference.
+    - Modified the logic to transition to power save mode only if the bounding delete option is provided and no requests are received for 3 seconds.
+    - [Test]
+        - Performed inference using multiple processes.
+        - Conducted inference on the entire ModelZoo.
+    - [Related Issue]
+        - Regression Fail
+### 3. Added
+- None
+
 ## v1.6.2 / 2025-02.12
 ### 1. Changed
 - Print module revision version by gpio
