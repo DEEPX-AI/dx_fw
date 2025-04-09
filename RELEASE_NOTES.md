@@ -1,8 +1,44 @@
 # RELEASE_NOTES
 
-All notable changes to this project will be documented in this file.
+## v2.0.1 / 2025-04-09
+### 1. Changed
+- Update npu core clock manage logic
+  - Update NPU core clock manage logic (-> using npu clock skipper)
+- Change PCIe Link-up Logic
+  - Enforce pcie link up logic with secureloader
+  - Change pcie link up logic based on policy and steps
+  - Add FEATURE_PCIE_RTOS to seperate compile of rtos and secureloader
+  - Merge new feature like register and api tables, debug and log related to pcie Init poilcy then interrupt
+  - Reset phy when ctrl init fail and change ctrl reset condition
+  - Add perst enable in freertos
+  - Enable statemachine task after ltssm is enabled
+- Tighten NPU throttling conditions
+  - NPU throttling works when ddr temperature status >= 0x9 (85'C)
+- NPU Interrupts
+  - Change timeout of npu hang(1s -> 3s)
+  - Refactoring npu done interrupt logic
+### 2. Fixed
+- None
+### 3. Added
+- ADD PVT Temperature Calibration with OTP
+  - PVT Temperature Calibration is updated when OTP PVT calibration info exists
 
-## v1.6.3 / 2025-02.19
+## v2.0.0 / 2025-03-24
+### 1. Changed
+- None
+### 2. Fixed
+- Fix CPU reset logic
+  - Added logic to disable D-cache and perform ISB (Instruction Synchronization Barrier) before CPU reset to address occasional reset failures.
+- Fix throttling logic in user region (under 90'C)
+  - update frequency when throttling table (for user region) updated by user (dxrt-cli -C)
+- fix bounding error
+  - fix bounding error when multi-processes are running with multi-bounding options
+### 3. Added
+- Implement PCIe Register and API Function for PCIe debug interface
+- Add boot stage(secure loader)
+  - The boot process now proceeds as follows: ROM → Secure Loader → Boot Loader → FreeRTOS.
+
+## v1.6.3 / 2025-02-19
 ### 1. Changed
 - Set LPDDR Frequency by User
     - Add features for setting LPDDR frequency by using $dxrt-cli-internal -t <target_freq>
@@ -23,7 +59,8 @@ All notable changes to this project will be documented in this file.
 ### 3. Added
 - None
 
-## v1.6.2 / 2025-02.12
+
+## v1.6.2 / 2025-02-12
 ### 1. Changed
 - Print module revision version by gpio
 - Update NPU Throttling driver
