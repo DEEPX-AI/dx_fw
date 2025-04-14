@@ -1,5 +1,14 @@
 # RELEASE_NOTES
 
+## v2.0.2 / 2025-04-14
+### 1. Changed
+- None
+### 2. Fixed
+- Initialize controller settings in case, PCIe linkup succeed on ROM.
+- Enforce hot-reset logic.
+### 3. Added
+- None
+
 ## v2.0.1 / 2025-04-09
 ### 1. Changed
 - Update npu core clock manage logic
