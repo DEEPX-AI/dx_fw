@@ -1,5 +1,14 @@
 # RELEASE_NOTES
 
+## v2.0.3 / 2025-04-18
+### 1. Changed
+- None
+### 2. Fixed
+- Modify NPU error handling logic to notify to host when NPU error occurs.
+- Fix DDR channel mode.
+### 3. Added
+- None
+
 ## v2.0.2 / 2025-04-14
 ### 1. Changed
 - None
