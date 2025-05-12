@@ -1,5 +1,23 @@
 # RELEASE_NOTES
 
+## v2.0.4 / 2025-05-12
+### 1. Changed
+- Update refresh controls and Training repeats
+  - Update Refresh Cycle for rm 10 & 11 ( -> x0.25 )
+  - Update Training Repeats for 0x8 -> 0x10
+- Update pvt 2-point calibration policy
+  - Set default value if room (30'C) or hot(90'C) OTP Trim info is not valid 
+- Enhance inference logic and change pcie device id(0x01->0x00)
+- Always notify throttling works to host
+
+### 2. Fixed
+- Implement interrupt handler priority(5)
+  - The taskENTER_CRITICAL API only disables interrupts with interrupt priorities higher than 5. There is a possibility of problems when using RTOS APIs on interrupts with interrupt priorities lower than 5. So we adjust the priorities for all interrupts.
+
+### 3. Added
+- Add chip offset in device info
+  -  chip offset info (0~3) is added for H1, when [identify, get status] from dx-rt
+
 ## v2.0.3 / 2025-04-18
 ### 1. Changed
 - None
