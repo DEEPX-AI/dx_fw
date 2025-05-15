@@ -1,5 +1,13 @@
 # RELEASE_NOTES
 
+## v2.0.5 / 2025-05-15
+### 1. Changed
+- modify event enum value (match with dx-rt and driver)
+### 2. Fixed
+- None
+### 3. Added
+- None
+
 ## v2.0.4 / 2025-05-12
 ### 1. Changed
 - Update refresh controls and Training repeats
