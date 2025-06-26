@@ -1,4 +1,17 @@
 # RELEASE_NOTES
+## v2.1.0 / 2025-06-25
+### 1. Changed
+- Update LPDDR Driver
+  - Update Training Logic for LPDDR5/LPDDR5x
+- Update DCDC IC reset value
+  - Enable forced PWM mode
+### 2. Fixed
+### 3. Added
+- Add LPDDR4 Driver
+  - Add Support for LPDDR4 (dx_m1m)
+- Merge SLT(System Level Test) features
+- Add DVS(Dynamic Voltage Scaling) feature to mitigate NPU voltage drop
+
 
 ## v2.0.5 / 2025-05-15
 ### 1. Changed
