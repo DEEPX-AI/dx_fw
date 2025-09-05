@@ -1,4 +1,15 @@
 # RELEASE_NOTES
+
+## v2.1.4 / 2025-09-04
+### 1. Changed
+- Update the version for compability
+### 2. Fixed
+- None
+### 3. Added
+- None
+
+---
+
 ## v2.1.2 / 2025-07-18
 ### 1. Changed
 - Implement stop & go inference function
