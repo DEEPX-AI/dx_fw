@@ -1,4 +1,35 @@
 # RELEASE_NOTES
+
+## v2.1.4 / 2025-09-04
+### 1. Changed
+- Update the version for compability
+### 2. Fixed
+- None
+### 3. Added
+- None
+
+---
+
+## v2.1.2 / 2025-07-18
+### 1. Changed
+- Implement stop & go inference function
+  - The function has been modified to implement by splitting the tiles when the number of tiles is large.
+  - The information is passed on from the model file and operates.
+### 2. Fixed
+- Fix qspi read logic which can cause underflow
+### 3. Added
+- Activate monitoring logic for weight data
+  - The weight recovery concept of NPU is a separate mechanism.
+  - That is, when NPU is damaged in weight, the device requests normal weight from the host through PCI.
+  - The request and NPU operation can be performed simultaneously.
+
+## v2.1.1 / 2025-07-07
+### 1. Changed
+### 2. Fixed
+### 3. Added
+- Added support for reading PCIe and DMA channel status via CLI command.
+- Added message parser for RX eye measurement tool read/write feature.
+
 ## v2.1.0 / 2025-06-25
 ### 1. Changed
 - Update LPDDR Driver
