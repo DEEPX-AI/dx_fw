@@ -1,5 +1,15 @@
 # RELEASE_NOTES
 
+## v2.1.6 / 2025-10-02
+### 1. Changed
+- Updated LPDDR Training Logic & Sequence
+### 2. Fixed
+- None
+### 3. Added
+- Added Features for FCT Test
+
+---
+
 ## v2.1.4 / 2025-09-04
 ### 1. Changed
 - Update the version for compability
