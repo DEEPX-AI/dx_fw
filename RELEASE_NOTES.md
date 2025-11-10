@@ -1,4 +1,75 @@
 # RELEASE_NOTES
+## v2.4.0 / 2025-11-07
+
+### 1. Changed
+- Response to Host (in Inference) only if bound is not zero
+
+### 2. Fixed
+- Minor fix for build error in LPDDR4
+
+### 3. Added
+- PPCPU
+  - Support DXNNv8 PPU models (also support DXNNv6 PPU models)
+  - Need to Update DX-RT over 3.1.0
+- Add build target about vnpu
+
+## v2.3.2 / 2025-09-17
+
+### 1. Changed
+
+### 2. Fixed
+- LPDDR PRBS traing fail judge
+  - if prbs_*_vwm*_fail occur it does not apply dqs offset
+  - add prbs traing margin print
+
+### 3. Added
+
+## v2.3.1 / 2025-09-15
+
+### 1. Changed
+- change lpddr training margin (0.7 -> 0.62 by sjlee@deepx.ai)
+
+### 2. Fixed
+- minor fix for fct test
+- minor fix for cpureset
+  - fix lpddr freq shows 0 to user when cpureset
+
+### 3. Added
+
+## v2.3.0 / 2025-09-12
+
+### 1. Changed
+- update fct test mode (1: full test / 2: simple test)
+- update versioning (suffix)
+- update AVC 2.0
+- Update AVCTask's priority
+- Add lpddr training margin test when firmware is updated
+ - Training with target frequency +200Mhz and retraining with target frequency
+ - Save training margin info in boot_env
+
+### 2. Fixed
+- change minor bugs in PCIe link-up sequence
+- Support safe link-up on rpi5 when warm boot scenario
+- Firmware update & boot logic
+  - Fixed hash calculation and fw.bin index format
+
+### 3. Added
+- support single msi
+- add phy lane valid check logic before negotiating with host LTSSM
+- FCT Test mode
+  - Check buck IC(LPDDR I/O voltage) slave address and LPDDR Training Margin
+- Model Profiling
+  - Model profiling mode for supporting Inference model's voltage drop analysis
+- Boot
+  - Add Hash & Header check in boot_env
+- Secure Debug
+  - Add secure debug feature
+
+## v2.2.0 / 2025-07-23
+### 1. Changed
+### 2. Fixed
+### 3. Added
+- Added option to enable NPU inference over USB.
 
 ## v2.1.6 / 2025-10-02
 ### 1. Changed
