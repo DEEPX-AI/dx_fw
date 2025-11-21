@@ -71,26 +71,6 @@
 ### 3. Added
 - Added option to enable NPU inference over USB.
 
-## v2.1.6 / 2025-10-02
-### 1. Changed
-- Updated LPDDR Training Logic & Sequence
-### 2. Fixed
-- None
-### 3. Added
-- Added Features for FCT Test
-
----
-
-## v2.1.4 / 2025-09-04
-### 1. Changed
-- Update the version for compability
-### 2. Fixed
-- None
-### 3. Added
-- None
-
----
-
 ## v2.1.2 / 2025-07-18
 ### 1. Changed
 - Implement stop & go inference function
