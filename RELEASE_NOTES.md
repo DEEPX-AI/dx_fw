@@ -30,7 +30,6 @@
 - change lpddr training margin (0.7 -> 0.62 by sjlee@deepx.ai)
 
 ### 2. Fixed
-- minor fix for fct test
 - minor fix for cpureset
   - fix lpddr freq shows 0 to user when cpureset
 
@@ -39,7 +38,6 @@
 ## v2.3.0 / 2025-09-12
 
 ### 1. Changed
-- update fct test mode (1: full test / 2: simple test)
 - update versioning (suffix)
 - update AVC 2.0
 - Update AVCTask's priority
@@ -56,20 +54,12 @@
 ### 3. Added
 - support single msi
 - add phy lane valid check logic before negotiating with host LTSSM
-- FCT Test mode
-  - Check buck IC(LPDDR I/O voltage) slave address and LPDDR Training Margin
 - Model Profiling
   - Model profiling mode for supporting Inference model's voltage drop analysis
 - Boot
   - Add Hash & Header check in boot_env
 - Secure Debug
   - Add secure debug feature
-
-## v2.2.0 / 2025-07-23
-### 1. Changed
-### 2. Fixed
-### 3. Added
-- Added option to enable NPU inference over USB.
 
 ## v2.1.2 / 2025-07-18
 ### 1. Changed
