@@ -1,4 +1,31 @@
 # RELEASE_NOTES
+## v2.5.0 / 2026-01-02
+
+### 1. Changed
+- Update thermal throttling priority
+  - Before : Emergency > Default Throttling > User Throttling
+  - After   : Emergency > User Throttling > Default Throttling
+- Return PPCPU runtime for Framework Profiler
+  - Before : response->inf_time = NPU time only
+  - After   : response->inf_time = NPU + PPCPU time
+
+### 2. Fixed
+
+### 3. Added
+- Added QoS in NPU Scheduler
+- Support nand 2k flash image (flash_image_nand_2k.bin in build)
+
+## v2.4.1 / 2025-12-11
+
+### 1. Changed
+
+### 2. Fixed
+- Add timeout in PPU tile
+
+### 3. Added
+- Uart boot mode
+  - Use this mode with dx_rt_sys_tools/uart_boot
+
 ## v2.4.0 / 2025-11-07
 
 ### 1. Changed
