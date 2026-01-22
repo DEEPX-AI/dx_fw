@@ -8,6 +8,7 @@
 - Return PPCPU runtime for Framework Profiler
   - Before : response->inf_time = NPU time only
   - After   : response->inf_time = NPU + PPCPU time
+- Wait for PERST# signal during the initial boot stage to guarantee PCIe link establishment.
 
 ### 2. Fixed
 
