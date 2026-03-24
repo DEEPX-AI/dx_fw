@@ -1,4 +1,28 @@
 # RELEASE_NOTES
+## v2.5.2 / 2026-03-19
+
+### 1. Changed
+
+### 2. Fixed
+- Fix interrupt strom for npu abnormal irq
+- Align to 2 cells for safe access in PPU (Yolo models)
+
+### 3. Added
+- Add Password in UART console
+
+## v2.5.1 / 2026-02-25
+
+### 1. Changed
+- Update AVC policy
+  - Common: minimum voltage (730 -> 750)
+  - M1M: AVC start voltage in cold temp (780 -> 790, 800)
+
+### 2. Fixed
+
+### 3. Added
+- Get chip info from OTP
+  - Parse M1M / M1MA / M1MA-L in booting sequence
+
 ## v2.5.0 / 2026-01-02
 
 ### 1. Changed
