@@ -1,4 +1,13 @@
 # RELEASE_NOTES
+## v2.5.3 / 2026-04-04
+
+### 1. Changed
+
+### 2. Fixed
+- disable qos feature (bitmatch fail in some ppu models)
+
+### 3. Added
+
 ## v2.5.2 / 2026-03-19
 
 ### 1. Changed
