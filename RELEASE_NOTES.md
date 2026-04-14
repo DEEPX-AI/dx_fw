@@ -1,4 +1,22 @@
 # RELEASE_NOTES
+## v2.5.5 / 2026-04-14
+
+### 1. Changed
+- Sync PPCPU Logic with dxnn Compiler
+
+### 2. Fixed
+
+### 3. Added
+
+## v2.5.4 / 2026-04-13
+
+### 1. Changed
+
+### 2. Fixed
+- add authentication in cli console
+
+### 3. Added
+
 ## v2.5.3 / 2026-04-04
 
 ### 1. Changed
