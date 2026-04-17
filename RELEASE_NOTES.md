@@ -1,4 +1,52 @@
 # RELEASE_NOTES
+## v2.5.6 / 2026-04-17
+
+### 1. Changed
+
+### 2. Fixed
+- power-save → run mode NPU re-enable and devMode race hardening
+
+### 3. Added
+
+## v2.5.5 / 2026-04-14
+
+### 1. Changed
+- Sync PPU Logic with dxnn Compiler
+
+### 2. Fixed
+
+### 3. Added
+
+## v2.5.3 / 2026-04-04
+
+### 1. Changed
+
+### 2. Fixed
+- disable qos feature (bitmatch fail in some ppu models)
+
+### 3. Added
+
+## v2.5.2 / 2026-03-19
+
+### 1. Changed
+
+### 2. Fixed
+- Fix interrupt strom for npu abnormal irq
+- Align to 2 cells for safe access in PPU (Yolo models)
+
+### 3. Added
+
+## v2.5.1 / 2026-02-25
+
+### 1. Changed
+- Update AVC policy
+  - Common: minimum voltage (730 -> 750)
+  - M1M: AVC start voltage in cold temp (780 -> 790, 800)
+
+### 2. Fixed
+
+### 3. Added
+
 ## v2.5.0 / 2026-01-02
 
 ### 1. Changed
