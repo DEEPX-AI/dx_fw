@@ -1,19 +1,19 @@
 # RELEASE_NOTES
-## v2.5.5 / 2026-04-14
+## v2.5.6 / 2026-04-17
 
 ### 1. Changed
-- Sync PPCPU Logic with dxnn Compiler
 
 ### 2. Fixed
+- power-save → run mode NPU re-enable and devMode race hardening
 
 ### 3. Added
 
-## v2.5.4 / 2026-04-13
+## v2.5.5 / 2026-04-14
 
 ### 1. Changed
+- Sync PPU Logic with dxnn Compiler
 
 ### 2. Fixed
-- add authentication in cli console
 
 ### 3. Added
 
@@ -35,7 +35,6 @@
 - Align to 2 cells for safe access in PPU (Yolo models)
 
 ### 3. Added
-- Add Password in UART console
 
 ## v2.5.1 / 2026-02-25
 
@@ -47,8 +46,6 @@
 ### 2. Fixed
 
 ### 3. Added
-- Get chip info from OTP
-  - Parse M1M / M1MA / M1MA-L in booting sequence
 
 ## v2.5.0 / 2026-01-02
 
