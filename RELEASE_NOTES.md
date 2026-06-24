@@ -1,4 +1,34 @@
 # RELEASE_NOTES
+## v2.7.0 / 2026-06-08
+
+### 1. Changed
+- Disable SRIOV and remove related capability
+- Add timeout for PCIe Link EQ
+
+### 2. Fixed
+- Minor fix about NPU init sequence
+- fix cpureset logic (Soc guide)
+
+### 3. Added
+
+## v2.6.1 / 2026-04-29
+
+### 1. Changed
+
+### 2. Fixed
+- update PPCPU logic for hardness
+
+### 3. Added
+
+## v2.6.0 / 2026-04-28
+
+### 1. Changed
+
+### 2. Fixed
+- Update LPDDR5(x) Training Logic (by @sjlee)
+
+### 3. Added
+
 ## v2.5.6 / 2026-04-17
 
 ### 1. Changed
