@@ -1,4 +1,17 @@
 # RELEASE_NOTES
+## v2.7.1 / 2026-07-03
+
+### 1. Changed
+- Adjust cpu reset delay from 20ms to 200ms to ensure stable PLL lock.
+- Update OTP Revision
+- Disabled Root Complex Tx Equalization Preset 10 (Test Mode) to prevent the link from entering compliance/test loops during normal boot.
+- Disable Preset10 by default when PCIe link equalization, as it is strictly reserved for compliance test.
+- Change BAR0 type from prefetchable to non-prefetchable on VNPU board type
+
+### 2. Fixed
+
+### 3. Added
+
 ## v2.7.0 / 2026-06-08
 
 ### 1. Changed
