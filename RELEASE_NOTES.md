@@ -1,4 +1,14 @@
 # RELEASE_NOTES
+## v2.7.2 / 2026-07-15
+
+### 1. Changed
+- Revert M1/M1M IC and M.2 module and DX-H1 Quattro board products PCIe device id to `0x0000`
+
+### 2. Fixed
+- Clear input queues when all bound option is deleted
+
+### 3. Added
+
 ## v2.7.1 / 2026-07-03
 
 ### 1. Changed
