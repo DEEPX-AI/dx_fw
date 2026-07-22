@@ -4,7 +4,7 @@
 ### 1. Changed
 
 ### 2. Fixed
-- Solving PCIe emumeration issue on RZ/G3E
+- Solving PCIe enumeration issue on RZ/G3E
 
 ### 3. Added
 
