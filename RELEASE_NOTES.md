@@ -1,4 +1,66 @@
 # RELEASE_NOTES
+## v2.7.3 / 2026-07-22
+
+### 1. Changed
+
+### 2. Fixed
+- Solving PCIe enumeration issue on RZ/G3E
+
+### 3. Added
+
+## v2.7.2 / 2026-07-15
+
+### 1. Changed
+- Revert M1/M1M IC and M.2 module and DX-H1 Quattro board products PCIe device id to `0x0000`
+
+### 2. Fixed
+- Clear input queues when all bound option is deleted
+
+### 3. Added
+
+## v2.7.1 / 2026-07-03
+
+### 1. Changed
+- Adjust cpu reset delay from 20ms to 200ms to ensure stable PLL lock.
+- Update OTP Revision
+- Disabled Root Complex Tx Equalization Preset 10 (Test Mode) to prevent the link from entering compliance/test loops during normal boot.
+- Disable Preset10 by default when PCIe link equalization, as it is strictly reserved for compliance test.
+- Change BAR0 type from prefetchable to non-prefetchable on VNPU board type
+
+### 2. Fixed
+
+### 3. Added
+
+## v2.7.0 / 2026-06-08
+
+### 1. Changed
+- Disable SRIOV and remove related capability
+- Add timeout for PCIe Link EQ
+
+### 2. Fixed
+- Minor fix about NPU init sequence
+- fix cpureset logic (Soc guide)
+
+### 3. Added
+
+## v2.6.1 / 2026-04-29
+
+### 1. Changed
+
+### 2. Fixed
+- update PPCPU logic for hardness
+
+### 3. Added
+
+## v2.6.0 / 2026-04-28
+
+### 1. Changed
+
+### 2. Fixed
+- Update LPDDR5(x) Training Logic (by @sjlee)
+
+### 3. Added
+
 ## v2.5.6 / 2026-04-17
 
 ### 1. Changed
