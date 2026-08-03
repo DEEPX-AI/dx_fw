@@ -1,4 +1,13 @@
 # RELEASE_NOTES
+## v2.7.4 / 2026-07-31
+
+### 1. Changed
+
+### 2. Fixed
+- Add PCIe message API for setting MSI IMWR to support VM and disable FLR IRQ trigger while doing FLR SEQ
+
+### 3. Added
+
 ## v2.7.3 / 2026-07-22
 
 ### 1. Changed
