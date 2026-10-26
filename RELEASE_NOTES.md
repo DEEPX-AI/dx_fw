@@ -1,4 +1,26 @@
 # RELEASE_NOTES
+## v2.7.6 / 2026-09-21
+
+### 1. Changed
+- Enhance power-save mode via NPU power gating
+
+### 2. Fixed
+- Prevent mailbox ack starvation & increase scheduler task priority
+- Report HW op-timeout as NPU hang and set HW timeouts (2s) below SW Timeout (3s)
+
+### 3. Added
+- Add recovery for eq fail and optimize device task time with driver signal
+
+## v2.7.5 / 2026-08-31
+
+### 1. Changed
+
+### 2. Fixed
+- LPDDR5x clear logic
+
+### 3. Added
+- Add manual fan control logic for H1/H1M VNPU and and pci msg api
+
 ## v2.7.4 / 2026-07-31
 
 ### 1. Changed
