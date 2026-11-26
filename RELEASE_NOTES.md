@@ -1,4 +1,54 @@
 # RELEASE_NOTES
+## v2.8.1 / 2026-11-24
+
+### 1. Changed
+
+### 2. Fixed
+- Fixed the device sometimes not coming back after a firmware update or CPU reset, which left it hung until a power cycle
+- Fixed boot_env being erased and rewritten on every boot; it is now written only when its contents change
+- Fix Fan control logic in Single Die (For COB board)
+
+### 3. Added
+- Add OTP update option for Factory Test
+
+## v2.7.9 / 2026-11-12
+
+### 1. Changed
+- FCT DDR test uses the PRBS training margin
+
+### 2. Fixed
+- Fixed the NPU IRQ_CMD_CKSUM error recovery (RMAP) so it reliably restores the NPU
+- Fixed the DRAM refresh-rate status, which is now read from the controller TEMP_STATUS
+- DX-M1MA parts with the remarked OTP ECID marks "M\0\0A" and "MB\0A" are now detected as DX-M1MA
+
+### 3. Added
+
+## v2.7.8 / 2026-11-09
+
+### 1. Changed
+- Thermal emergency (100'C) now blocks inference, turns the NPU rail off for a minimum hold of 2-4 s, and resumes at the floor clock with paced step-ups. Emergency is checked every 500 ms, and the release point is configurable with `throttling_ctrl.release`
+- On the DX-M1 M.2 LPDDR4X board, M1 vs M1M is taken from the BOARD TYPE strap. IDENTIFY reports the chip package, and the board uses the M1 PCIe sub-device ID
+- DX-M1MA (OTP ECID "MA") uses and reports 1 GB of DRAM
+- After a firmware update, LPDDR is trained once at the detected rate, and the PHY training is updated
+
+### 2. Fixed
+- Fixed stop & go (large) models with two or more checkpoints: the last segment and the reported inference time are now correct
+- Fixed the Keymos LPDDR4X rate being reported as 4200 while it runs at 3733
+- Fixed fw.bin carrying a second, unused copy of every image, so the SLT image no longer exceeds the 1 MiB host download
+
+### 3. Added
+- Added support for the LPDDR5 byte mode, Keymos and Rayson DRAM parts, and the M1MLA, M1MB and M1MA0 packages
+- Added the SLT build and release flow, the OTP journal, the NPU peak-power Vmin test and the PCIe TX DCC check for SLT
+
+## v2.7.7 / 2026-10-22
+
+### 1. Changed
+
+### 2. Fixed
+- Re-notify an unconsumed single-MSI completion
+
+### 3. Added
+
 ## v2.7.6 / 2026-09-21
 
 ### 1. Changed
